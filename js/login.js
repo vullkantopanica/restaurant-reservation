@@ -40,7 +40,6 @@ $(document).ready(function () {
     });
 
     $(".register-form").submit(function (event) {
-        debugger;
         var email = $("#emailSignUp").val();
         var isEmailValid = isValidEmail(email);
 

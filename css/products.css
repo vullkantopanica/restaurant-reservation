@@ -1,10 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    background-image: url('../assets/background-picture.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
-
 
 .header {
     background-color: #333;
@@ -42,11 +45,14 @@ nav a:hover {
 }
 
 .reservation-container {
-    text-align: center;
-    margin-top: 20px;
+    height: 65px;
+    background-color: rgba(139, 90, 25, 0.5);
+    display: flex;
+    align-items: center;
 }
 
-.reservation-container form{
+.reservation-container form {
+    width: -webkit-fill-available;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -62,7 +68,7 @@ nav a:hover {
 
 .search-button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: rgb(164, 107, 32);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -70,10 +76,13 @@ nav a:hover {
     font-size: 16px;
 }
 
+.search-button:hover {
+    background-color: rgb(210, 136, 38);
+}
+
 .line {
     height: 2px;
-    background-color: #333;
-    margin: 20px 0px;
+    background-color: #000000;
 }
 
 #elemProducts {
@@ -85,6 +94,7 @@ nav a:hover {
 .products {
     width: 300px;
     margin: 10px;
+    background-color: rgba(139, 90, 25, 0.5);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -93,7 +103,12 @@ nav a:hover {
     flex-direction: column;
 }
 
+.products:hover{
+    background-color: rgba(139, 90, 25, 0.8);
+}
+
 .products img {
+    margin-top: 5px;
     width: 290px;
     height: 200px;
     border-radius: 8px;
