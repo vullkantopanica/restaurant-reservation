@@ -1,8 +1,12 @@
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
     background: rgb(255, 255, 255);
     background-image: url('../assets/background-picture.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .header {
@@ -89,12 +93,12 @@ nav a:hover {
 
 .form .message {
     margin: 15px 0 0;
-    color: #9c602b;
-    font-size: 12px;
+    color: #000000;
+    font-size: 15px;
 }
 
 .form .message a {
-    color: #884422;
+    color: #000000;
 }
 
 .form .register-form {

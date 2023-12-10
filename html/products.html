@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/products.css">
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <a href="../html/index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="authentication-ops">
+            <a href="../html/login.html">Log In</a>
+            <a href="../html/login.html">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="reservation-container">
+        <form action="#" method="post">
+            <div>
+                <label for="datepicker">Zgjedh daten:</label>
+                <input type="date" id="datepicker" class="datepicker">
+            </div>
+            <div>
+                <label for="hourPicker">Cakto oren:</label>
+                <input type="time" id="hourPicker" name="appt" min="09:00" max="18:00" required />
+            </div>
+            <div>
+                <label for="hourPicker">Cakto nr. personave:</label>
+                <input type="number" min="1" >
+            </div>
+            <button class="search-button">Rezervoni</button>
+        </form>
+    </div>
+
+    <div class="line"></div>
+
+    <div id="elemProducts">
+        <div class="products">
+            <img src="../assets/breakfast.jpg" height="200px" alt="image1">
+            <h3>Breakfast</h3>
+        </div>
+        <div class="products">
+            <img src="../assets/salad.jpeg" height="200px" alt="image4">
+            <h3>Salads</h3>
+        </div>
+        <div class="products">
+            <img src="../assets/meat.jpeg" height="200px" alt="image3">
+            <h3>Main Dish</h3>
+        </div>
+        <div class="products">
+            <img src="../assets/sea-food.jpg" height="200px" alt="image2">
+            <h3>Sea Food</h3>
+        </div>
+        <div class="products">
+            <img src="../assets/food.jpg" height="200px" alt="image5">
+            <h3>Desserts</h3>
+        </div>
+        <div class="products">
+            <img src="../assets/drinks.jpg" height="200px" alt="image6">
+            <h3>Drinks</h3>
+        </div>
+    </div>
+</body>
+</html>
